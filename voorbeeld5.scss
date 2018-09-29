@@ -1,0 +1,31 @@
+$buttonBackground: #16A085;
+$buttonColor: #FFFFFF;
+$buttonPadding: 5px;
+
+.button{
+    background: $buttonBackground;
+    border-radius: 8px;
+    color: $buttonColor;
+    display: inline-block;
+    padding: $buttonPadding;
+    text-decoration: none;
+}
+
+.jumbo-button{
+    @extend .button;
+    // bij een operation hoef je geen px mee te geven
+    // mag wel
+    padding: $buttonPadding + 30;
+  }
+
+  .light-button{
+      @extend .button;
+      /* door color te vermenigvuldigen 
+         met getal groter dan 1 
+         wordt kleur lichter
+         met getal kleiner dan 1
+         wordt kleur donkerder
+      */
+
+      background: $buttonBackground * 1.5;
+  }
