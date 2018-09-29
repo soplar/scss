@@ -1,0 +1,35 @@
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #000000;
+  background-color: #4392fa;
+}
+
+h1 {
+  color: yellow;
+}
+
+p {
+  color: yellow;
+}
+
+nav ul {
+  background: #2c3e50;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #00009b;
+}

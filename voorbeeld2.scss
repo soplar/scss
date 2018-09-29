@@ -1,0 +1,15 @@
+// uitleg https://www.youtube.com/watch?v=RQXyU1wr0Gs
+// dit is de main sass bestand
+// import zonder underscore en
+// zonder extensie
+// in visual studio code krijg je bij het bewaren een error
+// dat file is not found
+// voer de compilatie handmatig uit
+// sass voorbeeld2.scss voorbeeld2.css
+// voor een mini
+// sass voorbeeld2.scss voorbeeld2.min.css  --style compressed
+@import "voorbeeld2sub";
+
+p{
+    font-size: 24px;
+}

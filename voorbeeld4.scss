@@ -1,0 +1,42 @@
+// mixins
+// https://www.youtube.com/watch?v=GLC80g8IELY
+
+$background-color: rgb(238, 232, 144);
+
+.panel{
+    border: 3px solid dodgerblue;
+    background: $background-color;
+    margin: 10px;
+}
+// curved corner voor elke browser
+/*
+.border-radius{
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    border-radius: 5px;
+}
+*/
+// we maken een mixin
+// met een parameter
+@mixin border-radius($radius){
+    -webkit-border-radius: $radius;
+    -webkit-border-before-width: 20px;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+.little-panel{
+    @extend .panel;
+    @include border-radius(5px);
+    font-size: 12px;
+    padding: 5px;
+}
+
+.big-panel{
+    @extend .panel;
+    @include border-radius(20px);
+    font-size: 32px;
+    padding: 5px;
+}
